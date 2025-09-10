@@ -43,6 +43,22 @@ namespace HorsesFleeFromCombat
                 horseRaceList.Add(masleaHorseRace2);
             }
 
+            // Beyond Skyrim: Bruma
+            state.LoadOrder.TryGetIfEnabledAndExists("BSHeartland.esm", out var Bruma);
+            if (Bruma != null)
+            {
+                var brumaHorseRace = Bruma.Races.Where(x => x.FormKey.ID == 0xAE5AF).First();
+                horseRaceList.Add(brumaHorseRace);
+            }
+
+            // Khajiit Caravan Mules
+            state.LoadOrder.TryGetIfEnabledAndExists("Khajiit Caravan Mules.esp", out var CaravanMules);
+            if (CaravanMules != null)
+            {
+                var caravanMuleRace = CaravanMules.Races.Where(x => x.FormKey.ID == 0xD64).First();
+                horseRaceList.Add(caravanMuleRace);
+            }
+
             var blacklist = String.Join(",", Settings.Blacklist).Split(',').Select(x => x.Trim());
             var winningOverrides = state.LoadOrder.PriorityOrder.WinningOverrides<INpcGetter>();
 
