@@ -2,22 +2,12 @@
   "Nickname": "HorsesFleeFromCombat",
   "Visibility": "Visible",
   "OneLineDescription": "",
-  "LongDescription": "",
+  "LongDescription": "Accompanying Synthesis patcher for the Skyrim Special Edition mod Horses Flee From Combat. Requires https://www.nexusmods.com/skyrimspecialedition/mods/158896",
   "PreferredAutoVersioning": "Default",
   "RequiredMods": [
     "Horses Flee From Combat.esp"
   ],
   "TargetedReleases": [
-    "Oblivion",
-    "SkyrimLE",
-    "SkyrimSE",
-    "SkyrimVR",
-    "Fallout4",
-    "EnderalLE",
-    "EnderalSE",
-    "SkyrimSEGog",
-    "Starfield",
-    "Fallout4VR",
-    "OblivionRE"
+    "SkyrimSE"
   ]
 }

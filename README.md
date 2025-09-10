@@ -1,3 +1,3 @@
 A Synthesis patcher to accompany the Skyrim Special Edition mod Horses Flee From Combat.
 
-Requires 
+Requires https://www.nexusmods.com/skyrimspecialedition/mods/158896
